@@ -142,6 +142,7 @@ elif [[ $application == fullapp* ]]; then
     "pagination-domain" \
     "rest-pagination" \
     "jpa-pagination" \
+    "spring-boot-data-rest" \
     "spring-boot-async" \
     "spring-boot-devtools" \
     "openapi-contract" \
