@@ -1,0 +1,23 @@
+# Spring Data REST
+
+This module adds [Spring Data REST](https://spring.io/projects/spring-data-rest) to expose your Spring Data JPA repositories as REST endpoints.
+
+## Dependencies
+
+- `spring-boot-starter-data-rest`: Spring Data REST starter
+- `spring-data-rest-hal-explorer`: web UI to browse the exposed APIs (runtime only)
+
+## Configuration
+
+The following properties are set in the application configuration:
+
+```properties
+spring.data.rest.base-path=/api
+spring.data.rest.detection-strategy=annotated
+spring.data.rest.default-page-size=20
+spring.data.rest.max-page-size=100
+```
+
+With the `annotated` detection strategy, only the repositories annotated with `@RepositoryRestResource` are exposed.
+
+`RestConfiguration` uses plain JSON (instead of HAL) as default media type and returns the body on create and update.
