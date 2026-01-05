@@ -1,0 +1,25 @@
+# Spring Data REST Module
+
+## Description
+
+Ce module ajoute Spring Data REST à votre application, permettant d'exposer automatiquement vos repositories Spring Data JPA comme endpoints REST.
+
+## Prérequis
+
+- Module `spring-boot-data-jpa` doit être installé
+
+## Fonctionnalités ajoutées
+
+### Dépendances
+
+- `spring-boot-starter-data-rest`: Starter pour Spring Data REST
+- `spring-data-rest-hal-explorer`: Interface web pour explorer les APIs (disponible en runtime)
+
+### Configuration
+
+Les propriétés suivantes sont configurées dans `application.properties`:
+```properties
+spring.data.rest.base-path=/api
+spring.data.rest.detection-strategy=annotated
+spring.data.rest.default-page-size=20
+spring.data.rest.max-page-size=100

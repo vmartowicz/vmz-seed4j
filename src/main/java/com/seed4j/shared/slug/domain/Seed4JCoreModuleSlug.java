@@ -137,6 +137,7 @@ public enum Seed4JCoreModuleSlug implements Seed4JModuleSlugFactory {
   SPRING_BOOT_CUCUMBER_JPA_RESET("spring-boot-cucumber-jpa-reset", RANK_A),
   SPRING_BOOT_CUCUMBER_JWT_AUTHENTICATION("spring-boot-cucumber-jwt-authentication", RANK_C),
   SPRING_BOOT_CUCUMBER_OAUTH_2_AUTHENTICATION("spring-boot-cucumber-oauth2-authentication", RANK_B),
+  SPRING_BOOT_DATA_REST("spring-boot-data-rest", RANK_C),
   SPRING_BOOT_DEVTOOLS("spring-boot-devtools", RANK_C),
   SPRING_BOOT_LOCAL_PROFILE("spring-boot-local-profile", RANK_B),
   SPRING_BOOT_DOCKER_COMPOSE("spring-boot-docker-compose", RANK_C),
